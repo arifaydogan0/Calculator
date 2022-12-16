@@ -4,7 +4,7 @@
              x:Class="Calculator.MainPage">
 
     <StackLayout>
-        <Entry x:Name="entry" Placeholder="Sayı giriniz" BackgroundColor="AliceBlue" Margin="10" FontSize="Large" HeightRequest="100" TextChanged="entry_TextChanged"/>
+        <Entry x:Name="entry" Placeholder="Sayı giriniz" BackgroundColor="AliceBlue" Margin="10" FontSize="Large" HeightRequest="100" TextChanged="entry_TextChanged" Keyboard="Numeric"/>
         <Label x:Name="result" Margin="10,10,10,10" FontSize="31" Text="Result = " />
 
         <StackLayout Orientation="Horizontal" Margin="25,25,25,25">

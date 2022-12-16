@@ -7,9 +7,9 @@ namespace Calculator
     public partial class MainPage : ContentPage
     {
 
-        string ekran = "";
-        string rakamlar = "0123456789";
-        string islemler = "+-x/";
+        static string ekran = "";
+        readonly static string rakamlar = "0123456789";
+        readonly static string islemler = "+-x/";
 
         public MainPage()
         {
@@ -19,21 +19,12 @@ namespace Calculator
         private void entry_TextChanged(object sender, TextChangedEventArgs e)
         {
             //sonucu hesapla
-            if (e.NewTextValue.Length != 0)
+            if (e.NewTextValue.Length == 0)
                 return;
 
             char sonKarakter = e.NewTextValue[e.NewTextValue.Length - 1];
 
-            if (!rakamlar.Contains(sonKarakter) && !islemler.Contains(sonKarakter))
-                entry.Text = e.OldTextValue;
-
             ekran = entry.Text;
-
-
-            for (int i = 0; i < ekran.Length; i++)
-            {
-
-            }
         }
 
         private void Topla_Clicked(object sender, EventArgs e)
