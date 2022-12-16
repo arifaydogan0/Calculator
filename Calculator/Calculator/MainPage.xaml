@@ -4,9 +4,15 @@
              x:Class="Calculator.MainPage">
 
     <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="20" CornerRadius="20">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
+        <Entry x:Name="entry" Placeholder="Sayı giriniz" BackgroundColor="AliceBlue" Margin="10" FontSize="Large" HeightRequest="100" TextChanged="entry_TextChanged"/>
+        <Label x:Name="result" Margin="10,10,10,10" FontSize="31" Text="Result = " />
+
+        <StackLayout Orientation="Horizontal" Margin="25,25,25,25">
+            <Button x:Name="Topla" Text="+" FontSize="55" CornerRadius="10" BackgroundColor="YellowGreen" Clicked="Topla_Clicked"/>
+            <Button x:Name="Çıkar" Text="-" FontSize="55" CornerRadius="10" BackgroundColor="YellowGreen" Clicked="Çıkar_Clicked"/>
+            <Button x:Name="Çarp" Text="x" FontSize="45" CornerRadius="10" BackgroundColor="YellowGreen" Clicked="Çarp_Clicked"/>
+            <Button x:Name="Böl" Text="/" FontSize="55" CornerRadius="10" BackgroundColor="YellowGreen" Clicked="Böl_Clicked"/>
+        </StackLayout>
     </StackLayout>
 
 </ContentPage>
