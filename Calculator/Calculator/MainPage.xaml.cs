@@ -28,6 +28,12 @@ namespace Calculator
                 entry.Text = e.OldTextValue;
 
             ekran = entry.Text;
+
+
+            for (int i = 0; i < ekran.Length; i++)
+            {
+
+            }
         }
 
         private void Topla_Clicked(object sender, EventArgs e)
