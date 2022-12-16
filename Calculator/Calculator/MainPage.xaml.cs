@@ -22,7 +22,7 @@ namespace Calculator
             if (e.NewTextValue.Length == 0)
                 return;
 
-            char sonKarakter = e.NewTextValue[e.NewTextValue.Length - 1];
+            //char sonKarakter = e.NewTextValue[e.NewTextValue.Length - 1];
 
             ekran = entry.Text;
         }
